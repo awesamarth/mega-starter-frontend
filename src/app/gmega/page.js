@@ -13,7 +13,7 @@ export default function Counter() {
     const [txHash, setTxHash] = useState();
     
     // This will track the transaction and wait for it to be confirmed
-    const { data: receipt, isSuccess: isTxConfirmed } = useWaitForTransactionReceipt({
+    const {  isSuccess: isTxConfirmed } = useWaitForTransactionReceipt({
         hash: txHash,
     });
     
